@@ -20,7 +20,7 @@
 1. 현재 상태 확인
 
    ```bash
-   ./gradlew -q text
+   ./gradlew -q texttest
    ```
 
    이 출력은 현재 레거시 코드의 동작을 보여주는 기준입니다. 리팩토링 중에는 이 출력이 바뀌지 않아야 합니다.
@@ -45,7 +45,7 @@
 
    ```bash
    ./gradlew test
-   ./gradlew -q text
+   ./gradlew -q texttest
    ```
 
    단위 테스트는 구체적인 규칙을 확인하고, 텍스트 출력은 전체 동작이 유지되는지 확인하는 용도로 씁니다.
@@ -68,6 +68,6 @@
 ## 완료 기준
 
 - `./gradlew test`가 통과합니다.
-- `./gradlew -q text`가 정상 실행됩니다.
+- `./gradlew -q texttest`가 정상 실행됩니다.
 - 기존 아이템 규칙이 유지됩니다.
 - `Conjured` 규칙을 설명하는 테스트가 있습니다.
